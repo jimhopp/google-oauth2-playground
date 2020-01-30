@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+	<script src="/auth_data.js" ></script>
+	<script src="/auth.js" ></script>
+	<script src="https://apis.google.com/js/platform.js?onload=initSignin" async defer ></script>
+  </head>
+  <body>
+	<div id="result"></div>
+	<!-- 
+	 NOTE: you can uncomment the following two lines and not need the initSignin 
+	 stuff above 
+	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+	<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div> 
+	-->
+	<div id="signinButton"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
+  </body>
+</html>
