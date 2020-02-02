@@ -57,7 +57,6 @@
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
 	var xhr = new XMLHttpRequest();
-	//xhr.open('POST', 'https://signin-testbed-1571421143767.appspot.com/signin');
 	xhr.open('POST', my_url + 'signin');
 	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	xhr.onload = function() {
